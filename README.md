@@ -11,7 +11,7 @@ Next step was to view all the data in a user friendly table using AS function.
 
 ![sql query](https://user-images.githubusercontent.com/96391154/159233076-1e95ada8-fb83-4b3b-9854-8b88eb5002b7.png)
 
-My final step was to use the CASE function on my database. I made a case for a highly popular payment type to have more than 15 transaction amounts and an average payment type to have less than 10 transaction amounts. I then grouped the data by country and payment type. The output shows  a highly popular payment type in the US is Visa. 
+My final step was to use the CASE function on my database. I made a case for a highly popular payment type to have more than 15 transaction amounts and an average payment type to have less than 10 transaction amounts. I then grouped the data by country and payment type. The output shows that a highly popular payment type in the US is Visa. 
 
 ![payment type popularity ](https://user-images.githubusercontent.com/96391154/159235473-e53e7fef-6129-4c7a-a66d-51883a6e2dd7.png)
 
