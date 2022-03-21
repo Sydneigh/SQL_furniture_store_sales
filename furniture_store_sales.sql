@@ -118,3 +118,16 @@ INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,co
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/6/09 21:13','Chair',1200,'Visa','Kofi','Vancouver','British Columbia','Canada','1/7/08 21:16','1/14/09 20:50',49.25,-123.1333333);
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/14/09 11:19','Chair',1200,'Visa','Jennifer','Jumeira','Dubayy','United Arab Emirates','1/14/09 10:44','1/14/09 21:26',25.2097222,55.2477778);
 INSERT INTO sales(transaction_date,product,price,payment_type,name,city,state,country,account_created,last_login,latitude,longitude) VALUES ('1/13/09 19:39','Chair',1200,'Visa','Jolene','Englewood','CO','United states','1/6/09 22:00','1/14/09 22:02',39.64778,-104.98722);
+
+SELECT payment_type, country, count (payment_type) AS transaction_amount, 
+CASE
+      WHEN   count(payment_type) > 15 THEN "high"
+      WHEN  count(payment_type)< 10 THEN "average"
+      ELSE "low"
+      END "popularity"
+      FROM sales
+      GROUP BY country, payment_type;
+      
+      
+
+
